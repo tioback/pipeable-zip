@@ -1,0 +1,16 @@
+{
+  "name": "pipeable-zip",
+  "version": "1.0.0",
+  "description": "A way to compress an output to zip format while piping a stream.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["zip", "stream", "pipe", "pipeline", "piping", "compression"],
+  "author": "Renato Pereira Back <renatopb@gmail.com>",
+  "repository": "https://github.com/tioback/pipeable-zip.git",
+  "license": "MIT",
+  "dependencies": {
+    "zip-stream": "^4.0.2"
+  }
+}

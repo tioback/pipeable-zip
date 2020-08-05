@@ -6,7 +6,7 @@ This project allows for easily compressing files with ZIP using [node-zip-stream
 ```javascript
 reader
   .pipe(someTransformation)
-  .pipe(new SingleFileZipCompressor({fileName: "name_inside_zip.txt"})
+  .pipe(new SingleFileZipCompressor({fileName: "name_inside_zip.txt"}))
   .pipe(writer);
 ```
 
