@@ -1,6 +1,6 @@
 {
   "name": "pipeable-zip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A way to compress an output to zip format while piping a stream.",
   "main": "index.js",
   "scripts": {

@@ -11,15 +11,17 @@ class SingleFileZipCompressor extends Transform {
     this.inner = new PassThrough();
 
     this.packer = new Packer();
-    this.packer.entry(this.inner, {name: fileName}, this.forwardErrors.bind(this));
+    this.packer.entry(this.inner, {name: fileName}, this.handleResult.bind(this));
 
     super.pipe(this.inner, {});
 
     this.packer.finalize();
   }
 
-  forwardErrors(err) {
-    this.emit('error', err);
+  handleResult(err) {
+    if (err) {
+      this.emit('error', err);
+    }
     this.end();
   }
 
